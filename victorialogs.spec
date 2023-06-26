@@ -40,10 +40,10 @@ cp victoria-metrics-prod %{buildroot}%{_bindir}/victorialogs
 %endif
 
 %pre
-/usr/bin/getent group victorialogs > /dev/null || /usr/sbin/groupadd -r victoriametrics
+/usr/bin/getent group victorialogs > /dev/null || /usr/sbin/groupadd -r victorialogs
 /usr/bin/getent passwd victorialogs > /dev/null || /usr/sbin/useradd -r -d /var/lib/victorialogs -s /bin/bash -g victorialogs victorialogs
 %{__mkdir} -p /var/lib/victorialogs
-/usr/bin/echo "WARINING: chown -R victoriametrics:victoriametrics /var/lib/victorialogs"
+/usr/bin/echo "WARINING: chown -R victorialogs:victorialogs /var/lib/victorialogs"
 /usr/bin/echo "THIS MAY TAKE SOME TIME"
 /usr/bin/chown -R victorialogs:victorialogs /var/lib/victorialogs
 
