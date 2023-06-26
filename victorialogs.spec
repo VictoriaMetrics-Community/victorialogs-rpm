@@ -29,8 +29,8 @@ tar -zxf victorialogs.tar.gz
 
 %install
 %{__install} -m 0755 -d %{buildroot}%{_bindir}
-%{__install} -m 0755 -d %{buildroot}/etc/victorialogs/single
-cp %{SOURCE1} %{buildroot}/etc/victorialogs/single
+%{__install} -m 0755 -d %{buildroot}/etc/victorialogs
+cp %{SOURCE1} %{buildroot}/etc/victorialogs
 cp victoria-metrics-prod %{buildroot}%{_bindir}/victorialogs
 %{__install} -m 0755 -d %{buildroot}/var/lib/victorialogs
 %if %{use_systemd}
