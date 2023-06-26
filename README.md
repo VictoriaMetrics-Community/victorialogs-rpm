@@ -16,7 +16,7 @@ sudo yum -y install victorialogs
 ```
 
 ## Installation with dnf
-Support Amazonlinux 2023, CentOS-stream 8, CentOS-stream 9, CentOS 8, CentOS 9, Oraclelinux 8, Rhel 8, Rhel 9
+Support CentOS-stream 8, CentOS-stream 9, CentOS 8, CentOS 9, Oraclelinux 8, Rhel 8, Rhel 9
 
 ```
 sudo dnf -y install yum-plugin-copr
