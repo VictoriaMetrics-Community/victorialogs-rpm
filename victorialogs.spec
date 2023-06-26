@@ -33,8 +33,8 @@ tar -zxf victorialogs.tar.gz
 %{__install} -m 0755 -d %{buildroot}%{_bindir}
 %{__install} -m 0755 -d %{buildroot}/etc/victorialogs
 cp %{SOURCE1} %{buildroot}/etc/victorialogs
-cp victoria-logs-prod %{buildroot}%{_bindir}/victorialogs
-%{__install} -m 0755 -d %{buildroot}/var/lib/victorialogs
+cp victoria-logs-prod %{buildroot}%{_bindir}/victoria-logs-prod
+%{__install} -m 0755 -d %{buildroot}/var/lib/victoria-logs-prod
 %if %{use_systemd}
 %{__mkdir} -p %{buildroot}%{_unitdir}
 %{__install} -m644 %{SOURCE0} \
