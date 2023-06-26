@@ -66,7 +66,7 @@ cp victoria-logs-prod %{buildroot}%{_bindir}/victorialogs
 
 %files
 %config /etc/victorialogs/victorialogs.conf
-%{_bindir}/victoria-metrics-prod
+%{_bindir}/victoria-logs-prod
 %dir %attr(0775, victorialogs, victorialogs) /var/lib/victorialogs
 %if %{use_systemd}
 %{_unitdir}/%{name}.service
