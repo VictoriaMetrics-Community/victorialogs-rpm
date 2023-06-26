@@ -1,6 +1,6 @@
 [Unit]
 Description=VictoriaLogs is log management and log analytics system from VictoriaMetrics.
-# https://docs.victoriametrics.com
+# https://docs.victoriametrics.com/VictoriaLogs
 After=network.target
 
 [Service]
@@ -17,7 +17,9 @@ EnvironmentFile=-/etc/victorialogs/victorialogs.conf
 ExecStart=/usr/bin/victorialogs $ARGS
 ExecStop=/bin/kill -s SIGTERM $MAINPID
 ExecReload=/bin/kill -HUP $MAINPID
-# See docs https://docs.victoriametrics.com/Single-server-VictoriaMetrics.html#tuning
+# See docs:
+# https://docs.victoriametrics.com/Single-server-VictoriaMetrics.html#tuning
+# https://docs.victoriametrics.com/VictoriaLogs/QuickStart.html
 ProtectSystem=full
 LimitNOFILE=1048576
 LimitNPROC=1048576
