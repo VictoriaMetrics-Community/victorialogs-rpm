@@ -1,9 +1,9 @@
 # victorialogs-rpm
-RPM for victorialogs - VictoriaLogs is log management and log analytics system from VictoriaMetrics.
+RPM for victorialogs - [VictoriaLogs](https://docs.victoriametrics.com/VictoriaLogs/) is log management and log analytics system from [VictoriaMetrics](https://docs.victoriametrics.com/).
 
 [![Copr build status](https://copr.fedorainfracloud.org/coprs/antonpatsev/victorialogs/package/victorialogs/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/antonpatsev/victorialogs/package/victorialogs/)
 
-Before install disable Selinux. Info https://github.com/patsevanton/victoriametrics-rpm/issues/10
+Before install disable [Selinux](https://selinuxproject.org/page/Main_Page). Info https://github.com/patsevanton/victoriametrics-rpm/issues/10
 
 ## Installation with yum
 Support CentOS 6, CentOS 7, Oraclelinux 7, Rhel 7
