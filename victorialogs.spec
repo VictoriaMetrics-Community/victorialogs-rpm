@@ -1,5 +1,5 @@
 Name:    victorialogs
-Version: 0.3.0
+Version: 0.4.1
 Release: 1
 Summary: Log management and log analytics system from VictoriaMetrics.
 
