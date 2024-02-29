@@ -65,7 +65,7 @@ cp victoria-logs-prod %{buildroot}%{_bindir}/victoria-logs-prod
 %endif
 
 %files
-%config /etc/victorialogs/victorialogs.conf
+%config /etc/victorialogs/vlsingle.conf
 %{_bindir}/victoria-logs-prod
 %dir %attr(0775, victorialogs, victorialogs) /var/lib/victorialogs
 %if %{use_systemd}
