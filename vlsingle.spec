@@ -1,4 +1,4 @@
-Name:    victorialogs
+Name:    vlsingle
 Version: 0.4.2
 Release: 1
 Summary: Log management and log analytics system from VictoriaMetrics.
@@ -8,7 +8,7 @@ License: ASL 2.0
 URL: https://github.com/VictoriaMetrics/VictoriaMetrics/releases/download/v%{version}-victorialogs/victoria-logs-linux-amd64-v%{version}-victorialogs.tar.gz
 
 Source0: %{name}.service
-Source1: victorialogs.conf
+Source1: vlsingle.conf
 Requires(pre): /usr/sbin/useradd, /usr/bin/getent, /usr/bin/echo, /usr/bin/chown
 Requires(postun): /usr/sbin/userdel
 
