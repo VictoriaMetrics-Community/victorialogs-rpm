@@ -1,4 +1,4 @@
-Name:    vlsingle
+Name:    vlsingle-arm64
 Version: 0.5.0
 Release: 1
 Summary: Log management and log analytics system from VictoriaMetrics.

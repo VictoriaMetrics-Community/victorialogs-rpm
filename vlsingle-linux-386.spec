@@ -1,4 +1,4 @@
-Name:    vlsingle
+Name:    vlsingle-386
 Version: 0.5.0
 Release: 1
 Summary: Log management and log analytics system from VictoriaMetrics.
