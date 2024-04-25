@@ -1,5 +1,5 @@
-Name:    vlsingle-amd64
-Version: 0.5.0
+Name:    victorialogs
+Version: 0.5.2
 Release: 1
 Summary: Log management and log analytics system from VictoriaMetrics.
 
@@ -8,7 +8,7 @@ License: ASL 2.0
 URL: https://github.com/VictoriaMetrics/VictoriaMetrics/releases/download/v%{version}-victorialogs/victoria-logs-linux-amd64-v%{version}-victorialogs.tar.gz
 
 Source0: %{name}.service
-Source1: vlsingle.conf
+Source1: victorialogs.conf
 Requires(pre): /usr/sbin/useradd, /usr/bin/getent, /usr/bin/echo, /usr/bin/chown
 Requires(postun): /usr/sbin/userdel
 
@@ -65,7 +65,7 @@ cp victoria-logs-prod %{buildroot}%{_bindir}/victoria-logs-prod
 %endif
 
 %files
-%config /etc/victorialogs/vlsingle.conf
+%config /etc/victorialogs/victorialogs.conf
 %{_bindir}/victoria-logs-prod
 %dir %attr(0775, victorialogs, victorialogs) /var/lib/victorialogs
 %if %{use_systemd}
