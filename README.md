@@ -24,3 +24,19 @@ sudo dnf -y copr enable victoriametrics/VictoriaLogs
 sudo dnf makecache
 sudo dnf -y install victorialogs
 ```
+
+## [VictoriaLogs datasource for Grafana](https://github.com/VictoriaMetrics/victorialogs-datasource)
+
+The VictoriaLogs datasource plugin allows you to query and visualize [VictoriaLogs](https://docs.victoriametrics.com/victorialogs/) data in [Grafana](https://grafana.com).
+
+- [Installation](https://github.com/VictoriaMetrics/victorialogs-datasource#installation)
+- [Notes](https://github.com/VictoriaMetrics/victorialogs-datasource#notes)
+- [License](https://github.com/VictoriaMetrics/victorialogs-datasource#license)
+
+### Looking for a Demo without installation?
+
+Just visit [https://play-grafana.victoriametrics.com/...](https://play-grafana.victoriametrics.com/explore?schemaVersion=1&panes=%7B%22pd1%22:%7B%22datasource%22:%22P566C6523BE02F42C%22,%22queries%22:%5B%7B%22refId%22:%22A%22,%22datasource%22:%7B%22type%22:%22victorialogs-datasource%22,%22uid%22:%22P566C6523BE02F42C%22%7D,%22expr%22:%22%2A%22,%22queryType%22:%22range%22%7D%5D,%22range%22:%7B%22from%22:%22now-1h%22,%22to%22:%22now%22%7D%7D%7D&orgId=1)
+
+<p>
+    <a href="#"><img src="Grafana-datasource-for-VictoriaLogs-demo.png" alt="Victoriametrics Grafana playground of a datasource for VictoriaLogs demo" style="width:100%;height:auto;"></a>
+</p>
