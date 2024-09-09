@@ -25,6 +25,24 @@ sudo dnf makecache
 sudo dnf -y install victorialogs
 ```
 
+# Data ingestion [#](https://docs.victoriametrics.com/victorialogs/data-ingestion/#)
+
+[](https://github.com/VictoriaMetrics/Victoriametrics/edit/master/docs/VictoriaLogs/data-ingestion/README.md)
+
+[VictoriaLogs](https://docs.victoriametrics.com/victorialogs/) can accept logs from the following log collectors:
+
+-   Syslog, Rsyslog and Syslog-ng - see [these docs](https://docs.victoriametrics.com/victorialogs/data-ingestion/syslog/).
+-   Filebeat - see [these docs](https://docs.victoriametrics.com/victorialogs/data-ingestion/filebeat/).
+-   Fluentbit - see [these docs](https://docs.victoriametrics.com/victorialogs/data-ingestion/fluentbit/).
+-   Logstash - see [these docs](https://docs.victoriametrics.com/victorialogs/data-ingestion/logstash/).
+-   Vector - see [these docs](https://docs.victoriametrics.com/victorialogs/data-ingestion/vector/).
+-   Promtail (aka Grafana Loki) - see [these docs](https://docs.victoriametrics.com/victorialogs/data-ingestion/promtail/).
+-   Telegraf - see [these docs](https://docs.victoriametrics.com/victorialogs/data-ingestion/telegraf/).
+-   OpenTelemetry Collector - see [these docs](https://docs.victoriametrics.com/victorialogs/data-ingestion/opentelemetry/).
+
+The ingested logs can be queried according to [these docs](https://docs.victoriametrics.com/victorialogs/querying/).
+
+
 ## [VictoriaLogs datasource for Grafana](https://github.com/VictoriaMetrics/victorialogs-datasource)
 
 The VictoriaLogs datasource plugin allows you to query and visualize [VictoriaLogs](https://docs.victoriametrics.com/victorialogs/) data in [Grafana](https://grafana.com).
