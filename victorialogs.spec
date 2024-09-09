@@ -4,9 +4,9 @@
 %endif
 
 Name:    victorialogs
-Version: 0.28.0
+Version: 0.29.0
 Release: 1
-Summary: Log management and log analytics system from VictoriaMetrics.
+Summary: Log management and log analytics system from VictoriaMetrics team.
 
 Group:   Development Tools
 License: ASL 2.0
