@@ -78,6 +78,10 @@ cp victoria-logs-prod %{buildroot}%{_bindir}/victoria-logs-prod
 %endif
 
 %changelog
+* Mon Sep 09 2024 Denys Holius <rpm@victoriametrics.com>
+- Updated to version v0.29.0-victorialogs
+  See Full Changelog at https://docs.victoriametrics.com/victorialogs/changelog/#v0290
+
 * Tue Jul 18 2024 Denys Holius <rpm@victoriametrics.com>
 - Updated to version v0.28.0-victorialogs
   See Full Changelog at https://docs.victoriametrics.com/victorialogs/changelog/#v0280
