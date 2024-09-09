@@ -23,7 +23,7 @@ Requires(postun): /usr/sbin/userdel
 %define use_systemd (0%{?fedora} && 0%{?fedora} >= 18) || (0%{?rhel} && 0%{?rhel} >= 7) || (!0%{?is_opensuse} && 0%{?suse_version} >=1210) || (0%{?is_opensuse} && 0%{?sle_version} >= 120100)
 
 %if %{use_systemd}
-Requires: systemd
+Requires: systemd curl
 BuildRequires: systemd
 %endif
 
