@@ -17,9 +17,7 @@ Requires(postun): /usr/sbin/userdel
 
 %global source_date_epoch_from_changelog 1
 
-%if %{use_systemd}
 Requires: curl
-%endif
 
 %description
 vlogsqcli is an interactive command-line tool for querying VictoriaLogs
