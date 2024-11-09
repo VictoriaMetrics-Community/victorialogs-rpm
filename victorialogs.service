@@ -14,7 +14,7 @@ StartLimitInterval=0
 Restart=on-failure
 RestartSec=5
 EnvironmentFile=-/etc/victorialogs/victorialogs.conf
-ExecStart=/usr/bin/victorialogs $ARGS
+ExecStart=/usr/bin/victoria-logs-prod $ARGS
 ExecStop=/bin/kill -s SIGTERM $MAINPID
 ExecReload=/bin/kill -HUP $MAINPID
 # See docs:

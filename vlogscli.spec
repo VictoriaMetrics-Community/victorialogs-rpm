@@ -17,9 +17,7 @@ Requires(postun): /usr/sbin/userdel
 
 %global source_date_epoch_from_changelog 1
 
-%if %{use_systemd}
 Requires: curl
-%endif
 
 %description
 vlogsqcli is an interactive command-line tool for querying VictoriaLogs
@@ -35,6 +33,9 @@ cp vlogscli-prod %{buildroot}%{_bindir}/vlogscli-prod
 %pre
 /usr/bin/getent group victorialogs > /dev/null || /usr/sbin/groupadd -r victorialogs
 /usr/bin/getent passwd victorialogs > /dev/null || /usr/sbin/useradd -r -d /var/lib/victorialogs -s /bin/bash -g victorialogs victorialogs
+
+%files
+%{_bindir}/vlogscli-prod
 
 %changelog
 * Mon Oct 21 2024 Denys Holius <rpm@victoriametrics.com>
