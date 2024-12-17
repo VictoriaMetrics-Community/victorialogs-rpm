@@ -1,4 +1,11 @@
 # victorialogs-rpm
+
+<p align="center">
+   <img src="logo.png" width="300" alt="Home Assistant Add-on VictoriaLogs Database for logs">
+</p>
+
+[![GitHub license](https://img.shields.io/github/license/VictoriaMetrics/VictoriaMetrics.svg)](https://github.com/VictoriaMetrics-Community/homeassistant-addon-victoriametrics/blob/main/LICENSE) [![Slack](https://img.shields.io/badge/join%20slack-%23victoriametrics-brightgreen.svg)](https://slack.victoriametrics.com/) [![Twitter Follow](https://img.shields.io/twitter/follow/VictoriaMetrics?style=social)](https://x.com/VictoriaMetrics) [![Subreddit subscribers](https://img.shields.io/reddit/subreddit-subscribers/VictoriaMetrics?style=social)](https://www.reddit.com/r/VictoriaMetrics/) [![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=flat-squeare&logo=telegram&logoColor=white)](https://t.me/VictoriaMetrics_en)
+
 RPM for victorialogs - [VictoriaLogs](https://docs.victoriametrics.com/VictoriaLogs/) is log management and log analytics system from [VictoriaMetrics](https://docs.victoriametrics.com/).
 
 | Package | Status |
