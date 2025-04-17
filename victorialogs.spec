@@ -4,7 +4,7 @@
 %endif
 
 Name:    victorialogs
-Version: 1.15.0
+Version: 1.18.0
 Release: 1
 Summary: Log management and log analytics system from VictoriaMetrics team.
 
@@ -78,6 +78,10 @@ cp victoria-logs-prod %{buildroot}%{_bindir}/victoria-logs-prod
 %endif
 
 %changelog
+* Mon Jan 29 2024 Denys Holius <rpm@victoriametrics.com>
+- Updated to version v  v1.18.0-victorialogs
+  See Full Changelog at https://docs.victoriametrics.com/victorialogs/changelog/#v1180
+
 * Mon Jan 29 2024 Denys Holius <rpm@victoriametrics.com>
 - Updated to version v v1.8.0-victorialogs
   See Full Changelog at https://docs.victoriametrics.com/victorialogs/changelog/#v180
