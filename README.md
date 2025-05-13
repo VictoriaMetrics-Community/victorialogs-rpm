@@ -1,4 +1,6 @@
-# victorialogs-rpm
+# RPM packages for VictoriaLogs
+
+> See also [VictoriaLogs cluster](https://docs.victoriametrics.com/victorialogs/cluster/))
 
 <p align="center">
    <img src="logo.png" width="300" alt="Home Assistant Add-on VictoriaLogs Database for logs">
@@ -35,31 +37,53 @@ sudo dnf makecache
 sudo dnf -y install victorialogs
 ```
 
-# Data ingestion [#](https://docs.victoriametrics.com/victorialogs/data-ingestion/#)
-
-[](https://github.com/VictoriaMetrics/Victoriametrics/edit/master/docs/VictoriaLogs/data-ingestion/README.md)
+# [Data ingestion](https://docs.victoriametrics.com/victorialogs/data-ingestion/)
 
 [VictoriaLogs](https://docs.victoriametrics.com/victorialogs/) can accept logs from the following log collectors:
-
--   Syslog, Rsyslog and Syslog-ng - see [these docs](https://docs.victoriametrics.com/victorialogs/data-ingestion/syslog/).
--   Filebeat - see [these docs](https://docs.victoriametrics.com/victorialogs/data-ingestion/filebeat/).
--   Fluentbit - see [these docs](https://docs.victoriametrics.com/victorialogs/data-ingestion/fluentbit/).
--   Logstash - see [these docs](https://docs.victoriametrics.com/victorialogs/data-ingestion/logstash/).
--   Vector - see [these docs](https://docs.victoriametrics.com/victorialogs/data-ingestion/vector/).
--   Promtail (aka Grafana Loki) - see [these docs](https://docs.victoriametrics.com/victorialogs/data-ingestion/promtail/).
--   Telegraf - see [these docs](https://docs.victoriametrics.com/victorialogs/data-ingestion/telegraf/).
--   OpenTelemetry Collector - see [these docs](https://docs.victoriametrics.com/victorialogs/data-ingestion/opentelemetry/).
+ 
+- Syslog, Rsyslog and Syslog-ng - see [these docs](https://docs.victoriametrics.com/victorialogs/data-ingestion/syslog/).
+- Filebeat - see [these docs](https://docs.victoriametrics.com/victorialogs/data-ingestion/filebeat/).
+- Fluentbit - see [these docs](https://docs.victoriametrics.com/victorialogs/data-ingestion/fluentbit/).
+- Fluentd - see [these docs](https://docs.victoriametrics.com/victorialogs/data-ingestion/fluentd/).
+- Logstash - see [these docs](https://docs.victoriametrics.com/victorialogs/data-ingestion/logstash/).
+- Vector - see [these docs](https://docs.victoriametrics.com/victorialogs/data-ingestion/vector/).
+- Promtail (aka Grafana Loki, Grafana Agent or Grafana Alloy) - see [these docs](https://docs.victoriametrics.com/victorialogs/data-ingestion/promtail/).
+- Telegraf - see [these docs](https://docs.victoriametrics.com/victorialogs/data-ingestion/telegraf/).
+- OpenTelemetry Collector - see [these docs](https://docs.victoriametrics.com/victorialogs/data-ingestion/opentelemetry/).
+- Journald - see [these docs](https://docs.victoriametrics.com/victorialogs/data-ingestion/journald/).
+- DataDog - see [these docs](https://docs.victoriametrics.com/victorialogs/data-ingestion/datadog-agent/).
 
 The ingested logs can be queried according to [these docs](https://docs.victoriametrics.com/victorialogs/querying/).
 
+[VictoriaLogs: Data ingestion](https://docs.victoriametrics.com/victorialogs/data-ingestion/)
 
-## [VictoriaLogs datasource for Grafana](https://github.com/VictoriaMetrics/victorialogs-datasource)
+See also:
+- [Log collectors and data ingestion formats](https://docs.victoriametrics.com/victorialogs/data-ingestion/#log-collectors-and-data-ingestion-formats).
+- [Data ingestion troubleshooting](https://docs.victoriametrics.com/victorialogs/data-ingestion/#troubleshooting).
 
-The VictoriaLogs datasource plugin allows you to query and visualize [VictoriaLogs](https://docs.victoriametrics.com/victorialogs/) data in [Grafana](https://grafana.com).
+[VictoriaLogs: Data ingestion](https://docs.victoriametrics.com/victorialogs/data-ingestion/)
 
-- [Installation](https://github.com/VictoriaMetrics/victorialogs-datasource#installation)
-- [Notes](https://github.com/VictoriaMetrics/victorialogs-datasource#notes)
-- [License](https://github.com/VictoriaMetrics/victorialogs-datasource#license)
+## [HTTP APIs](https://docs.victoriametrics.com/victorialogs/data-ingestion/#http-apis)
+
+VictoriaLogs supports the following data ingestion HTTP APIs:
+
+- Elasticsearch bulk API. See [these docs](https://docs.victoriametrics.com/victorialogs/data-ingestion/#elasticsearch-bulk-api).
+- JSON stream API aka [ndjson](https://jsonlines.org/). See [these docs](https://docs.victoriametrics.com/victorialogs/data-ingestion/#json-stream-api).
+- Loki JSON API. See [these docs](https://docs.victoriametrics.com/victorialogs/data-ingestion/#loki-json-api).
+- OpenTelemetry API. See [these docs](https://docs.victoriametrics.com/victorialogs/data-ingestion/#opentelemetry-api).
+- Journald export format.
+
+VictoriaLogs accepts optional [HTTP parameters](https://docs.victoriametrics.com/victorialogs/data-ingestion/#http-parameters) at data ingestion HTTP APIs.   
+
+# [Querying](https://docs.victoriametrics.com/victorialogs/querying/)
+ 
+[VictoriaLogs](https://docs.victoriametrics.com/victorialogs/) can be queried with [LogsQL](https://docs.victoriametrics.com/victorialogs/logsql/) via the following ways:
+ 
+- [vlogscli](https://docs.victoriametrics.com/victorialogs/querying/vlogscli/)
+- [Command-line interface](https://docs.victoriametrics.com/victorialogs/querying/#command-line)
+- [HTTP API](https://docs.victoriametrics.com/victorialogs/querying/#http-api)
+- [Web UI](https://docs.victoriametrics.com/victorialogs/querying/#web-ui) - a web-based UI for querying logs
+- [Grafana plugin](https://docs.victoriametrics.com/victorialogs/querying/#visualization-in-grafana)
 
 ### Looking for a Demo without installation?
 
