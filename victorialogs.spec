@@ -4,7 +4,7 @@
 %endif
 
 Name:    victorialogs
-Version: 1.18.0
+Version: 1.22.2
 Release: 1
 Summary: Log management and log analytics system from VictoriaMetrics team.
 
