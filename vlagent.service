@@ -1,5 +1,5 @@
 [Unit]
-Description=VictoriaLogs is log management and log analytics system from VictoriaMetrics.
+Description=VictoriaLogs is open source user-friendly database for logs from VictoriaMetrics.
 # https://docs.victoriametrics.com/victorialogs/
 After=network.target
 

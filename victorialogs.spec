@@ -4,7 +4,7 @@
 %endif
 
 Name:    victorialogs
-Version: 1.22.2
+Version: 1.25.0
 Release: 1
 Summary: Log management and log analytics system from VictoriaMetrics team.
 
@@ -78,46 +78,3 @@ cp victoria-logs-prod %{buildroot}%{_bindir}/victoria-logs-prod
 %endif
 
 %changelog
-* Mon Jan 29 2024 Denys Holius <rpm@victoriametrics.com>
-- Updated to version v  v1.18.0-victorialogs
-  See Full Changelog at https://docs.victoriametrics.com/victorialogs/changelog/#v1180
-
-* Mon Jan 29 2024 Denys Holius <rpm@victoriametrics.com>
-- Updated to version v v1.8.0-victorialogs
-  See Full Changelog at https://docs.victoriametrics.com/victorialogs/changelog/#v180
-
-* Mon Dec 09 2024 Denys Holius <rpm@victoriametrics.com>
-- Updated to version v v1.3.2-victorialogs
-  See Full Changelog at https://docs.victoriametrics.com/victorialogs/changelog/#v132
-
-* Fri Dec 06 2024 Denys Holius <rpm@victoriametrics.com>
-- Updated to version v v1.2.0-victorialogs
-  See Full Changelog at https://docs.victoriametrics.com/victorialogs/changelog/#v120
-
-* Sat Nov 09 2024 Denys Holius <rpm@victoriametrics.com>
-- Updated to version v v0.42.0-victorialogs
-  See Full Changelog at https://docs.victoriametrics.com/victorialogs/changelog/#v0420
-
-* Mon Oct 21 2024 Denys Holius <rpm@victoriametrics.com>
-- Updated to version v0.37.0-victorialogs
-  See Full Changelog at https://docs.victoriametrics.com/victorialogs/changelog/#v0370
-
-* Mon Sep 09 2024 Denys Holius <rpm@victoriametrics.com>
-- Updated to version v0.29.0-victorialogs
-  See Full Changelog at https://docs.victoriametrics.com/victorialogs/changelog/#v0290
-
-* Tue Jul 18 2024 Denys Holius <rpm@victoriametrics.com>
-- Updated to version v0.28.0-victorialogs
-  See Full Changelog at https://docs.victoriametrics.com/victorialogs/changelog/#v0280
-
-* Tue Jun 26 2024 Denys Holius <rpm@victoriametrics.com>
-- Updated to version v0.23.0-victorialogs
-  See Full Changelog at https://docs.victoriametrics.com/victorialogs/changelog/#v0230
-
-* Fri May 24 2024 Denys Holius <rpm@victoriametrics.com>
-- Updated to version v0.10.0-victorialogs
-  See Full Changelog at https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v0.10.0-victorialogs
-
-* Mon May 13 2024 Denys Holius <rpm@victoriametrics.com>
-- Updated to version v0.6.0-victorialogs
-  See Full Changelog at https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v0.6.0-victorialogs
