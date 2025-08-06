@@ -1,5 +1,5 @@
 [Unit]
-Description=VictoriaLogs is open source user-friendly database for logs from VictoriaMetrics.
+Description=vlagent is a tiny agent which helps you collect logs from various sources and store them in VictoriaLogs
 # https://docs.victoriametrics.com/victorialogs/
 After=network.target
 
@@ -7,14 +7,12 @@ After=network.target
 Type=simple
 User=victorialogs
 Group=victorialogs
-WorkingDirectory=/var/lib/victorialogs
-ReadWritePaths=/var/lib/victorialogs
 StartLimitBurst=5
 StartLimitInterval=0
 Restart=on-failure
 RestartSec=5
-EnvironmentFile=-/etc/victorialogs/victorialogs.conf
-ExecStart=/usr/bin/victoria-logs-prod $ARGS
+EnvironmentFile=-/etc/victorialogs/vlagent.conf
+ExecStart=/usr/bin/vlagent-prod $ARGS
 ExecStop=/bin/kill -s SIGTERM $MAINPID
 ExecReload=/bin/kill -HUP $MAINPID
 # See docs:
@@ -26,7 +24,7 @@ LimitNPROC=1048576
 LimitCORE=infinity
 StandardOutput=syslog
 StandardError=syslog
-SyslogIdentifier=victorialogs
+SyslogIdentifier=vlagent
 PrivateTmp=yes
 ProtectHome=yes
 NoNewPrivileges=yes

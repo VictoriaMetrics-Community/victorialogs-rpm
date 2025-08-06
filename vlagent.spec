@@ -6,7 +6,7 @@
 Name:    vlagent
 Version: 1.25.0
 Release: 1
-Summary: vlogsqcli is an interactive command-line tool for querying VictoriaLogs
+Summary: vlagent is a tiny agent which helps you collect logs from various sources and store them in VictoriaLogs
 
 Group:   Development Tools
 License: ASL 2.0
