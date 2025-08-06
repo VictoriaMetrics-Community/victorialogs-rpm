@@ -4,7 +4,7 @@
 %endif
 
 Name:    vlagent
-Version: 1.25.0
+Version: 1.26.0
 Release: 1
 Summary: vlagent is a tiny agent which helps you collect logs from various sources and store them in VictoriaLogs
 
