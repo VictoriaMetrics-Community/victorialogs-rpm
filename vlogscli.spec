@@ -36,5 +36,3 @@ cp vlogscli-prod %{buildroot}%{_bindir}/vlogscli-prod
 
 %files
 %{_bindir}/vlogscli-prod
-
-%changelog

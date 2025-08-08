@@ -35,5 +35,3 @@ cp vlagent-prod %{buildroot}%{_bindir}/vlagent-prod
 
 %files
 %{_bindir}/vlagent-prod
-
-%changelog
