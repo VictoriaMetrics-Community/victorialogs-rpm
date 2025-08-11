@@ -4,7 +4,7 @@
 %endif
 
 Name:    victorialogs
-Version: 1.26.0
+Version: 1.27.0
 Release: 1
 Summary: Log management and log analytics system from VictoriaMetrics team.
 
@@ -78,3 +78,4 @@ cp victoria-logs-prod %{buildroot}%{_bindir}/victoria-logs-prod
 %endif
 
 %changelog
+%autochangelog

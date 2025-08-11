@@ -4,7 +4,7 @@
 %endif
 
 Name:    vlogscli
-Version: 1.26.0
+Version: 1.27.0
 Release: 1
 Summary: vlogsqcli is an interactive command-line tool for querying VictoriaLogs
 
@@ -38,3 +38,4 @@ cp vlogscli-prod %{buildroot}%{_bindir}/vlogscli-prod
 %{_bindir}/vlogscli-prod
 
 %changelog
+%autochangelog

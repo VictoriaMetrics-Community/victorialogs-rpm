@@ -4,13 +4,17 @@
 %endif
 
 Name:    vlagent
-Version: 1.26.0
+Version: 1.27.0
 Release: 1
 Summary: vlagent is a tiny agent which helps you collect logs from various sources and store them in VictoriaLogs
 
 Group:   Development Tools
 License: ASL 2.0
 URL: https://github.com/VictoriaMetrics/VictoriaLogs/releases/download/v%{version}/vlutils-linux-%{release_arch}-v%{version}.tar.gz
+
+Source0: %{name}.service
+Source1: %{name}.conf
+
 Requires(pre): /usr/sbin/useradd, /usr/bin/getent, /usr/bin/echo, /usr/bin/chown
 Requires(postun): /usr/sbin/userdel
 
@@ -45,7 +49,7 @@ cp vlagent-prod %{buildroot}%{_bindir}/vlagent-prod
 
 %pre
 /usr/bin/getent group victorialogs > /dev/null || /usr/sbin/groupadd -r victorialogs
-/usr/bin/getent passwd victorialogs > /dev/null || /usr/sbin/useradd -r -d /var/lib/victorialogs -s /bin/bash -g victorialogs victorialogs
+/usr/bin/getent passwd victorialogs > /dev/null || /usr/sbin/useradd -r -d /var/lib/vlagent-remotewrite-data -s /bin/bash -g victorialogs victorialogs
 
 %post
 %if %use_systemd
@@ -72,3 +76,4 @@ cp vlagent-prod %{buildroot}%{_bindir}/vlagent-prod
 %endif
 
 %changelog
+%autochangelog
