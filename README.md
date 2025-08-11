@@ -13,7 +13,9 @@ RPM for victorialogs - [VictoriaLogs](https://docs.victoriametrics.com/VictoriaL
 | Package | Status |
 | ------- | ------ |
 | victorialogs| [![Copr build status](https://copr.fedorainfracloud.org/coprs/victoriametrics/VictoriaLogs/package/victorialogs/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/victoriametrics/VictoriaLogs/package/victorialogs/) |
+| vlagent| [![Copr build status](https://copr.fedorainfracloud.org/coprs/victoriametrics/VictoriaLogs/package/vlagent/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/victoriametrics/VictoriaLogs/package/vlagent/) |
 | vlogscli | [![Copr build status](https://copr.fedorainfracloud.org/coprs/victoriametrics/VictoriaLogs/package/vlogscli/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/victoriametrics/VictoriaLogs/package/vlogscli/) |
+
 
 Before install disable [Selinux](https://selinuxproject.org/page/Main_Page).
 
