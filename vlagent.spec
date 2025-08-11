@@ -66,7 +66,7 @@ cp vlagent-prod %{buildroot}%{_bindir}/vlagent-prod
 %endif
 
 %files
-%{_bindir}/vmagent-prod
+%{_bindir}/vlagent-prod
 %dir %attr(0775, victorialogs, victorialogs) /etc/victorialogs/vlagent
 %dir %attr(0775, victorialogs, victorialogs) /var/lib/vlagent-remotewrite-data
 %config /etc/victorialogs/vlagent/vlagent.conf
