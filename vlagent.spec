@@ -39,7 +39,6 @@ tar -zxf vlutils.tar.gz
 %{__install} -m 0755 -d %{buildroot}%{_bindir}
 %{__install} -m 0755 -d %{buildroot}/etc/victorialogs/vlagent
 cp %{SOURCE1} %{buildroot}/etc/victorialogs/vlagent/
-cp %{SOURCE2} %{buildroot}/etc/victorialogs/vlagent/
 %{__install} -m 0755 -d %{buildroot}/var/lib/vlagent-remotewrite-data
 %if %{use_systemd}
 %{__mkdir} -p %{buildroot}%{_unitdir}
