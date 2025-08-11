@@ -70,3 +70,5 @@ cp vlagent-prod %{buildroot}%{_bindir}/vlagent-prod
 %if %{use_systemd}
 %{_unitdir}/vlagent.service
 %endif
+
+%changelog

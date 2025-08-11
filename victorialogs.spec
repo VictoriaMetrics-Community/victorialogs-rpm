@@ -76,3 +76,5 @@ cp victoria-logs-prod %{buildroot}%{_bindir}/victoria-logs-prod
 %if %{use_systemd}
 %{_unitdir}/%{name}.service
 %endif
+
+%changelog
