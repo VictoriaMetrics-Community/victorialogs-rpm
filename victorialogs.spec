@@ -10,7 +10,7 @@ Summary: Log management and log analytics system from VictoriaMetrics team.
 
 Group:   Development Tools
 License: ASL 2.0
-URL: https://github.com/VictoriaMetrics/VictoriaMetrics/releases/download/v%{version}-victorialogs/victoria-logs-linux-%{release_arch}-v%{version}-victorialogs.tar.gz
+URL: https://github.com/VictoriaMetrics/VictoriaLogs/releases/download/v%{version}/victoria-logs-linux-%{release_arch}-v%{version}.tar.gz
 
 Source0: %{name}.service
 Source1: victorialogs.conf
