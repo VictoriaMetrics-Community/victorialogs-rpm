@@ -16,6 +16,8 @@ Requires(pre): /usr/sbin/useradd, /usr/bin/getent, /usr/bin/echo, /usr/bin/chown
 Requires(postun): /usr/sbin/userdel
 Requires: curl
 
+BuildRequires: curl
+
 %description
 vlogsqcli is an interactive command-line tool for querying VictoriaLogs, see https://docs.victoriametrics.com/victorialogs/querying/vlogscli/
 
