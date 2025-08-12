@@ -14,10 +14,9 @@ URL: https://github.com/VictoriaMetrics/VictoriaLogs/releases/download/v%{versio
 
 Requires(pre): /usr/sbin/useradd, /usr/bin/getent, /usr/bin/echo, /usr/bin/chown
 Requires(postun): /usr/sbin/userdel
-
-%global source_date_epoch_from_changelog 1
-
 Requires: curl
+
+BuildRequires: curl
 
 %description
 vlogsqcli is an interactive command-line tool for querying VictoriaLogs, see https://docs.victoriametrics.com/victorialogs/querying/vlogscli/
@@ -36,6 +35,3 @@ cp vlogscli-prod %{buildroot}%{_bindir}/vlogscli-prod
 
 %files
 %{_bindir}/vlogscli-prod
-
-%changelog
-%autochangelog
