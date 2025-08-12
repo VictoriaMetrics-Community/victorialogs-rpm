@@ -25,6 +25,8 @@ Requires: systemd curl
 BuildRequires: systemd curl
 %endif
 
+BuildRequires: curl
+
 %description
 VictoriaLogs is log management and log analytics system from VictoriaMetrics.
 

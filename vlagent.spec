@@ -25,6 +25,7 @@ Requires(postun): /usr/sbin/userdel
 Requires: systemd curl
 BuildRequires: systemd curl
 %endif
+BuildRequires: curl
 
 %description
 vlagent is a tiny agent which helps you collect logs from various sources and store them in https://docs.victoriametrics.com/victorialogs/. See https://docs.victoriametrics.com/victorialogs/vlagent/#quick-start for details.
