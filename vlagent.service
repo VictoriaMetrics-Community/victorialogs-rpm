@@ -7,6 +7,7 @@ After=network.target
 Type=simple
 User=victorialogs
 Group=victorialogs
+ReadWritePaths=/var/lib/vlagent-remotewrite-data
 StartLimitBurst=5
 StartLimitInterval=0
 Restart=on-failure
